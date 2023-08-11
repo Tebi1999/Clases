@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <h1>formularios</h1>
+
+    <h2>contacto</h2>
+    <form action="" method="post">
+        <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" required>
+        </div>
+        <br>
+        <div>
+            <label for="">E-mail</label>
+            <input type="email" required>
+        </div>
+        <br>
+        <label for="">Comentarios</label>
+        <textarea></textarea>
+
+        <input type="submit" value="Contactar">
+
+    </form>
+
+    <h2>Buscador</h2>
+
+    <form action="" method="get">
+        <input type="text" placeholder="Ej: Lo que quieras" name="buscar">
+
+        <input type="submit" value="Buscar">
+    </form>
+   
+    <h2>Registro de usuario</h2>
+
+    <form action="https://formspree.io/f/mzbleegq" method="POST">
+        <div>
+            <label for="">Nombre y apellido</label>
+            <input type="text" name="nombre">
+        </div>
+        <div>
+            <label for="">E-mail</label>
+            <input type="email"  name="email">
+        </div>
+        <div>
+            <label for="">País</label>
+            <select name="pais" id="">
+                <option value="arg">Argentina</option>
+                <option value="bra">Brasil</option>
+                <option value="chi">Chile</option>
+            </select>
+        </div>
+        <div>
+           <!--  <p>Modalidad</p>
+            <input type="radio">
+            <label for="">Virtual</label>
+            <input type="radio">
+            <label for="">Presencial</label>
+            -->
+            <label for="">Modalidad</label>
+            <br>
+
+            <input type="radio" value="virtual" name="modalidad">Virtual
+            <input type="radio" value="presencial" name="modalidad">Presencial
+        </div>
+
+        <input type="checkbox"  name="terminos" value="acepto">Aceptar los términos y condiciones
+
+        <input type="submit" value="Registrarse">
+        
+    </form>
+    <h1><a id="indice-pricipal" href="../Index-Principal.html"> Volver al Indice </a></h1> 
+
+</body>
+
+</html>
